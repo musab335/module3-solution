@@ -1,4 +1,5 @@
-[🖼️ View My Banner on Canva](https://www.canva.com/design/DAGqzVwWVz4/XilpVq9t2oEFU9MwXrDYpw/view?utm_content=DAGqzVwWVz4&utm_campaign=share_your_design&utm_medium=link2&utm_source=shareyourdesignpanel)
+<img src="Blue Brown White Modern Web Developer LinkedIn Banner.png" alt="Banner" style="width:100%;" />
+
 
 # 🏨 Hotel Management System
 
