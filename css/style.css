@@ -1,0 +1,322 @@
+body{
+
+font-size: 16px;
+color: #fff;
+
+
+
+background-color:#e8e2da;
+color: 'oxygen'  sans-serief;
+  
+}
+/* Navbar Background */
+#header-nav {
+  background-color: 
+#333333
+;
+  border-radius: 0;
+  border: 0;
+  height: auto;
+  text-align: center;
+}
+
+
+
+/* Collapsible Navigation Styling */
+#nav-list {
+  margin-top: 30px;
+}
+
+#nav-list a {
+  color:#e8e2da;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background: #4d3f3f;
+}
+
+#nav-list span {
+  font-size: 1.8em;
+}
+
+
+
+
+
+/* Style the collapsed mobile menu toggle button */
+.navbar-header button.navbar-toggle {
+  border: 1px solid #e8e2da;
+}
+
+/* Style the icon bars inside the toggle button */
+.navbar-header .icon-bar {
+  background-color:
+#e8e2da;
+
+}
+
+.navbar-header {
+  clear: both;
+}
+
+
+.navbar-header h1 {
+  color:#e8e2da ;
+}
+
+
+
+
+
+/* Clear float issue causing yellow bar height collapse */
+.navbar-header {
+  clear: both;
+}
+
+/* Reduce spacing for smaller screens using negative margin */
+.navbar-header button.navbar-toggle {
+  margin-top:30px;
+}
+
+
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%; /* 100% of their Bootstrap column */
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid maroon;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+
+}
+
+/* Hover effect */
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 0 10px #999;
+}
+
+/* Optional: style the span inside each tile */
+#menu-tile span,
+#specials-tile span,
+#map-tile span {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.6em;
+  right: 0;
+  background: rgba #000;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+#menu-tile {
+  background-image: url('../images/download (2).jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#specials-tile {
+  background-image: url('/images/download (3).jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#map-tile {
+  background-image: url('path-to-your-image3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.panel-footer {
+  background-color: #f8f8f8;
+  padding: 30px 0 20px;
+  margin-top: 50px;
+  border-top: 0;
+}
+
+.panel-footer .row {
+  margin-bottom: 35px;
+}
+
+.panel-footer span {
+  font-size: 1.3em;
+}
+
+#address p {
+  color: green;
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+
+#testimonials p {
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+.panel-footer {
+  background-color: #000;  /* Black footer background */
+  color: white;            /* White text for visibility */
+  padding: 30px 0 20px;
+  margin-top: 50px;
+  border-top: 0;
+}
+
+.panel-footer .row {
+  margin-bottom: 35px;
+}
+
+.panel-footer span {
+  font-size: 1.3em;
+  color: white;
+}
+
+#address p {
+  color: lightgreen;
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+
+#testimonials p {
+  font-style: italic;
+  color: #ddd;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+
+/* Make <hr> visible on black background */
+hr.visible-xs {
+  border-top: 1px solid #666;
+}
+/* Existing styles (from earlier) */
+.panel-footer {
+  background-color: #000;
+  color: white;
+  padding: 30px 0 20px;
+  margin-top: 50px;
+  border-top: 0;
+}
+
+.panel-footer .row {
+  margin-bottom: 35px;
+}
+
+.panel-footer span {
+  font-size: 1.3em;
+  color: white;
+}
+
+#address p {
+  color: lightgreen;
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+
+#testimonials p {
+  font-style: italic;
+  color: #ddd;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+
+hr.visible-xs {
+  border-top: 1px solid #666;
+}
+
+/* 📱 Extra-small screen styling (mobile-specific) */
+@media (max-width: 767px) {
+  .panel-footer .row > div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .panel-footer .row > div:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  hr.visible-xs {
+    width: 50%;         /* Smaller horizontal rule */
+    margin: 10px auto;  /* Center the line */
+  }
+}
+
+
+
+
+
+
+
+.category-tile {
+  position: relative;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px auto;
+}
+
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+}
+
+.category-tile:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+
+
+
+
+
+#phone-xs {
+  background-color: #61122f;
+  padding: 12px;
+  text-align: center;
+}
+
+#phone-xs a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #61122f;
+  text-decoration: none;
+  padding: white 2px;
+  margin-bottom: 4px;
+  background-color: #61122f;
+    background: rgba #000;
+  color: white;
+  padding: 5px 10px;
+    background-color: #f6b319;
+  padding: 10px;
+  color: white;  
+   border:2px solid  #f6b319;
+    border :2px solid white;
+
+}
+
+#phone-xs div {
+  font-size: 14px;
+  color: white;
+}
+
+

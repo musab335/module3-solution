@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Lora:700" rel="stylesheet">
+  <!-- Add in <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header>
+
+ <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Toggle button for mobile -->
+        
+          <!-- Logo -->
+          <a href="index.html" class="pull-left visible-md visible-lg">
+          <!-- Brand Name and Certification -->
+          <div class="navbar-brand">
+            <a href="index.html">
+              <h1>Food,LLC</h1>
+            </a>
+          </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+
+        <!-- Collapsible Navigation Menu -->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+           
+ 
+
+       <li>
+              
+              <a href="index.html">
+           <i class="fas fa-home"></i><br class="hidden-xs"> Home
+
+
+
+              </a>
+            </li>
+
+            <li>
+              
+              <a href="menu-categories.html">
+              <i class="fas fa-drumstick-bite"></i><br class="hidden-xs">Chicken
+
+              </a>
+            </li>
+       
+            <li>
+              <a href="single-categories.html">
+             <i class="fas fa-cow"></i><br class="hidden-xs">Beef
+
+              </a>
+            </li>
+            <li>
+              <a href="menu-Sushi.html">
+               <i class="fas fa-utensils"></i><br class="hidden-xs">Sushi
+
+            </li>
+           
+          </ul>
+        </div>
+      </header>
+
+<!-- Phone section for small screens only -->
+<div id="phone-xs" class="visible-xs" >
+  <a href="tel:410-602-5008">410-602-5008</a>
+  <div>* We Deliver</div>
+</div>
+
+
+
+<!-- JUMBOTRON SECTION -->
+<div class="container" id="main-content">
+  <div class="jumbotron">
+    <!-- XS ONLY image for small devices -->
+
+    <!-- XS ONLY: Mobile -->
+  
+    <!-- SM ONLY: Tablet -->
+    <img src="images/instagram-square-post-1080x1080.jpg" 
+         alt="Tablet View" 
+         class="img-responsive visible-sm">
+
+    <!-- MD & LG: Desktop -->
+    <img src="images/instagram-square-post-1080x1080.jpg" 
+         alt="Desktop View" 
+         class="img-responsive visible-md visible-lg">
+    <img src="images/instagram-square-post-1080x1080.jpg" 
+         alt="picture of Restaurant "
+         class="img-responsive visible-xs">
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id="home-tiles" class="row">
+  <!-- Menu Tile -->
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <a href="menu-categories.html">
+      <div id="menu-tile">
+        <span>Menu</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Specials Tile -->
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <a href="specials.html">
+      <div id="specials-tile">
+        <span>Specials</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Map Tile -->
+  <div class="col-xs-12 col-sm-12 col-md-4">
+    <a href="https://maps.app.goo.gl/v1j54KPADiJ73udr6" target="_blank">
+      <div id="map-tile">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1921.4072685944088!2d74.25764509798694!3d35.912488435901984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e6351f647756b3%3A0x37d0c3dfed9b5e7d!2sWali%20Restaurant%20%26%20Swimming%20pool!5e0!3m2!1sen!2s!4v1754024289226!5m2!1sen!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <span>Map</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+  </div>
+
+  
+<section class="hero">
+  <h1>Delicious Meals, Delivered Fresh</h1>
+  <p>Healthy. Tasty. On time.</p>
+  <a href="#menu" class="btn">View Menu</a>
+</section>
+
+
+
+
+
+
+
+<footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Hours -->
+        <div class="col-sm-4">
+          🕒 <span>Hours:</span><br>
+Monday – Friday: 10:00 AM – 9:00 PM<br>
+Saturday: 11:00 AM – 10:00 PM<br>
+Sunday: 11:00 AM – 8:00 PM
+          <hr class="visible-xs">
+        </div>
+
+        <!-- Address -->
+        <div class="col-sm-4" id="address">
+          🏠 <span>Address:</span><br>
+     Food, LLC<br>
+123 Main Street<br>
+Anytown, USA<br>
+📦 Delivery available within a 4-mile radius
+          <hr class="visible-xs">
+        </div>
+
+
+
+
+
+        💬 <strong>Customer Feedback</strong><br>
+"Exceptional food and prompt service!"<br>
+"Our go-to spot for quality meals!"
+
+        <!-- Testimonials -->
+        <div class="col-sm-4" id="testimonials">
+          <p>"Great food and fast service!"</p>
+          <p>"My favorite place to eat!"</p>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center">
+        &copy;Food,LLC
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
