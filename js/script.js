@@ -1,3 +1,5 @@
+var homeHtml = "food-snippet.html";
+
 (function (global) {
 
 var dc = {};
@@ -30,33 +32,34 @@ var insertProperty = function (string, propName, propValue) {
 };
 
 // --------- Module 5 Code Starts Here ---------
-
 // STEP 1: Choose a random category
 function chooseRandomCategory(categories) {
   var randomIndex = Math.floor(Math.random() * categories.length);
   return categories[randomIndex].short_name;
 }
 
+
 // STEP 2: Replace placeholder {{randomCategoryShortName}}
 function substituteCategoryShortName(snippet, shortName) {
   return snippet.replace("{{randomCategoryShortName}}", "'" + shortName + "'");
 }
 
-// --------- Module 5 Code Ends Here ---------
-
-// On page load (before images or CSS)
-document.addEventListener("DOMContentLoaded", function (event) {
+      // STEP 3: Get home-snippet
+      $ajaxUtils.sendGetRequest(
+        homeHtml,
+        function (homeHtmlResponse) {
+      document.addEventListener("DOMContentLoaded", function (event) {
 
   // On first load, show home view
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     allCategoriesUrl,
     function (categories) {
-      // STEP 3: Get home-snippet
+      // STEP 3: Get food-snippet.html
       $ajaxUtils.sendGetRequest(
         homeHtml,
         function (homeHtmlResponse) {
-          // STEP 4: Insert random category into home-snippet
+          // STEP 4: Insert random category into snippet
           var randomCategoryShortName = chooseRandomCategory(categories);
           var homeHtmlToInsertIntoMainPage =
             substituteCategoryShortName(homeHtmlResponse, randomCategoryShortName);
@@ -65,7 +68,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
         false);
     });
 });
-
-global.$dc = dc;
-
-})(window);
