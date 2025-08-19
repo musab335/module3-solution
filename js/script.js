@@ -1,10 +1,10 @@
-var homeHtml = "food-snippet.html";
-
 (function (global) {
 
 var dc = {};
 
-var homeHtml = "snippets/home-snippet.html";
+// Aapke project me ye file hai
+var homeHtml = "food-snippet.html";
+
 var allCategoriesUrl =
   "https://coursera-jhu-default-rtdb.firebaseio.com/categories.json";
 var menuItemsUrl =
@@ -32,34 +32,36 @@ var insertProperty = function (string, propName, propValue) {
 };
 
 // --------- Module 5 Code Starts Here ---------
+
 // STEP 1: Choose a random category
 function chooseRandomCategory(categories) {
   var randomIndex = Math.floor(Math.random() * categories.length);
   return categories[randomIndex].short_name;
 }
 
-
 // STEP 2: Replace placeholder {{randomCategoryShortName}}
 function substituteCategoryShortName(snippet, shortName) {
   return snippet.replace("{{randomCategoryShortName}}", "'" + shortName + "'");
 }
 
-      // STEP 3: Get home-snippet
-      $ajaxUtils.sendGetRequest(
-        homeHtml,
-        function (homeHtmlResponse) {
-      document.addEventListener("DOMContentLoaded", function (event) {
+// --------- Module 5 Code Ends Here ---------
+
+// On page load (before images or CSS)
+document.addEventListener("DOMContentLoaded", function (event) {
 
   // On first load, show home view
   showLoading("#main-content");
+
+  // STEP 3: Get categories
   $ajaxUtils.sendGetRequest(
     allCategoriesUrl,
     function (categories) {
-      // STEP 3: Get food-snippet.html
+
+      // STEP 4: Get food-snippet.html
       $ajaxUtils.sendGetRequest(
         homeHtml,
         function (homeHtmlResponse) {
-          // STEP 4: Insert random category into snippet
+          // STEP 5: Insert random category into snippet
           var randomCategoryShortName = chooseRandomCategory(categories);
           var homeHtmlToInsertIntoMainPage =
             substituteCategoryShortName(homeHtmlResponse, randomCategoryShortName);
@@ -68,3 +70,7 @@ function substituteCategoryShortName(snippet, shortName) {
         false);
     });
 });
+
+global.$dc = dc;
+
+})(window);
